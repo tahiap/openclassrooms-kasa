@@ -1,0 +1,32 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.errorPage {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 12% 76% 12%;
+	grid-template-columns: 100%;
+	.errorContent {
+		width: 100%;
+		flex: 1 1 auto;
+		color: var(--primary);
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 45% 5% auto;
+		align-items: center;
+		h1 {
+			font-size: 13rem;
+			text-align: center;
+		}
+		p {
+			font-size: 1.7rem;
+			text-align: center;
+		}
+		a {
+			font-size: 1.3rem;
+			text-align: center;
+			color: var(--primary);
+			display: inline;
+			text-decoration: underline;
+		}
+	}
+}

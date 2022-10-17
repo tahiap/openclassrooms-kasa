@@ -1,0 +1,8 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.home {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 223px auto;
+}

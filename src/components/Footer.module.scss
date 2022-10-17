@@ -1,0 +1,17 @@
+@use "../assets/styles/mixins" as mixin;
+
+footer {
+	height: 170px;
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.imgContainer {
+		height: 60px;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+}

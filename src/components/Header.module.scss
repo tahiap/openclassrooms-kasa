@@ -1,0 +1,26 @@
+@use "../assets/styles/mixins" as mixin;
+
+header {
+	height: 160px;
+	width: 85%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+	align-items: center;
+	.imgContainer {
+		height: 50px;
+		img {
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	nav {
+		justify-self: right;
+		a {
+			font-size: 1.4rem;
+			color: var(--primary);
+			margin-left: 40px;
+		}
+	}
+}

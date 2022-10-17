@@ -1,0 +1,64 @@
+.collapseMedium {
+	.title {
+		height: 52px;
+		h2 {
+			font-size: 18px;
+			line-height: 35px;
+		}
+	}
+	.text {
+		p {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+		}
+		li {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+}
+
+.collapseLarge {
+	width: 70%;
+	margin: 50px auto;
+	.title {
+		height: 45px;
+		h2 {
+			font-size: 24px;
+		}
+	}
+	.text {
+		p {
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 40px;
+		}
+	}
+}
+
+.collapseGeneral {
+	.title {
+		background-color: var(--primary);
+		color: white;
+		border-radius: 5px;
+		padding: 10px 15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		h2 {
+			font-weight: 500;
+		}
+		i {
+			font-size: 24px;
+			cursor: pointer;
+		}
+	}
+	.text {
+		background-color: var(--secondary);
+		color: var(--primary);
+		border-radius: 5px;
+		padding: 30px 20px;
+	}
+}

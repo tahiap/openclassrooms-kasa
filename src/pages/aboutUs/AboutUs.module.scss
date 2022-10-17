@@ -1,0 +1,9 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.aboutUs {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 223px auto;
+	align-items: center;
+}

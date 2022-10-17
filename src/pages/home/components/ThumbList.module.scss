@@ -1,0 +1,26 @@
+.thumbList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 85%;
+	background-color: var(--background-color);
+	border-radius: 25px;
+	margin: 45px auto;
+	padding: 50px 20px;
+}
+
+.emptyFeed {
+	width: 85%;
+	height: auto;
+	background-color: var(--background-color);
+	border-radius: 25px;
+	margin: 45px auto;
+	p {
+		color: var(--primary);
+		font-size: 24px;
+		text-align: center;
+		margin-top: 100px;
+	}
+}

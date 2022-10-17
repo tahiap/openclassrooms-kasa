@@ -1,0 +1,27 @@
+.banner {
+	border-radius: 25px;
+	height: 100%;
+	width: 85%;
+	margin: auto;
+	overflow: hidden;
+	align-items: center;
+	img {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		top: 0;
+		z-index: 1;
+		filter: opacity(70%);
+		filter: brightness(70%);
+	}
+	.bannerText {
+		color: white;
+		font-size: 48px;
+		font-weight: 500;
+		text-align: center;
+		position: relative;
+		top: -140px;
+		z-index: 2;
+		width: 100%;
+	}
+}
