@@ -30,7 +30,7 @@ function Lodging() {
 			</div>
 			<div className={`${styles.lodgingTags}`}>
 				{lodging.tags.map((infos) => (
-					<Tag key={lodging.tags.infos} text={infos} />
+					<Tag key={infos} text={infos} />
 				))}
 			</div>
 			<div className={`${styles.lodgingRate}`}>

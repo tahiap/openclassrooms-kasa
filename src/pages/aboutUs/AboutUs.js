@@ -28,7 +28,7 @@ function AboutUs() {
 			<Banner bannerImage={bannerImage} />
 			<ul className={`${styles.collapseList}`}>
 				{collapseInfos.map((infos) => (
-					<Collapse title={infos.title} text={infos.text} />
+					<Collapse key={infos.title} title={infos.title} text={infos.text} />
 				))}
 			</ul>
 		</div>

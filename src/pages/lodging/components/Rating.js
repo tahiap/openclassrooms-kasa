@@ -7,9 +7,9 @@ function Rating({ rating }) {
 		<>
 			{[...new Array(totalStars)].map((star, index) => {
 				return index < activeStars ? (
-					<i className="fa-solid fa-star"></i>
+					<i key={index} className="fa-solid fa-star"></i>
 				) : (
-					<i className="fa-regular fa-star"></i>
+					<i key={index} className="fa-regular fa-star"></i>
 				)
 			})}
 		</>

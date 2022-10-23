@@ -19,14 +19,16 @@ function Slideshow({ slides }) {
 	}
 
 	return (
-		<div className={`${styles.slideshow}`}>
+		<>
 			{slides.length === 1 ? (
-				<img src={slides} alt="logement" />
+				<div className={`${styles.slideshow}`}>
+					<img src={slides} alt="logement" />
+				</div>
 			) : (
 				slides.map((slide, slideIndex) => {
 					return (
 						slideIndex === currentIndex && (
-							<>
+							<div key={slide} className={`${styles.slideshow}`}>
 								<img src={slide} alt="logement" />
 								<div className={`${styles.calc}`}>
 									<i
@@ -41,12 +43,12 @@ function Slideshow({ slides }) {
 										{currentIndex + 1}/{slides.length}
 									</p>
 								</div>
-							</>
+							</div>
 						)
 					)
 				})
 			)}
-		</div>
+		</>
 	)
 }
 
