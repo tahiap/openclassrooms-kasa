@@ -13,20 +13,30 @@
 		grid-template-columns: 100%;
 		grid-template-rows: 45% 5% auto;
 		align-items: center;
+		padding: 0 50px;
 		h1 {
-			font-size: 13rem;
+			font-size: 288px;
 			text-align: center;
+			@include mixin.lg {
+				font-size: 112px;
+			}
 		}
 		p {
-			font-size: 1.7rem;
+			font-size: 44px;
 			text-align: center;
+			@include mixin.lg {
+				font-size: 26px;
+			}
 		}
 		a {
-			font-size: 1.3rem;
+			font-size: 18px;
 			text-align: center;
 			color: var(--primary);
 			display: inline;
 			text-decoration: underline;
+			@include mixin.lg {
+				font-size: 18px;
+			}
 		}
 	}
 }

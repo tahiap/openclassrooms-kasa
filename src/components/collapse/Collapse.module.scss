@@ -1,4 +1,36 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.collapseGeneral {
+	.title {
+		background-color: var(--primary);
+		color: white;
+		border-radius: 5px;
+		padding: 10px 15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		h2 {
+			font-weight: 500;
+		}
+		i {
+			font-size: 24px;
+			cursor: pointer;
+		}
+	}
+	.text {
+		background-color: var(--secondary);
+		color: var(--primary);
+		border-radius: 5px;
+		padding: 30px 20px;
+	}
+}
+
 .collapseMedium {
+	@include mixin.lg {
+		width: 100%;
+		margin: 15px auto;
+	}
 	.title {
 		height: 52px;
 		h2 {
@@ -7,15 +39,11 @@
 		}
 	}
 	.text {
-		p {
-			font-size: 18px;
-			font-weight: 400;
-			line-height: 25px;
-		}
+		p,
 		li {
 			font-size: 18px;
 			font-weight: 400;
-			line-height: 24px;
+			line-height: 25px;
 		}
 	}
 }
@@ -23,6 +51,10 @@
 .collapseLarge {
 	width: 70%;
 	margin: 50px auto;
+	@include mixin.lg {
+		width: 90%;
+		margin: 30px auto;
+	}
 	.title {
 		height: 45px;
 		h2 {
@@ -38,27 +70,25 @@
 	}
 }
 
-.collapseGeneral {
-	.title {
-		background-color: var(--primary);
-		color: white;
-		border-radius: 5px;
-		padding: 10px 15px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		h2 {
-			font-weight: 500;
+.collapseMedium,
+.collapseLarge {
+	@include mixin.lg {
+		.title {
+			height: 30px;
+			h2 {
+				font-size: 14px;
+			}
+			i {
+				font-size: 14px;
+			}
 		}
-		i {
-			font-size: 24px;
-			cursor: pointer;
+		.text {
+			padding: 20px 15px;
+			p,
+			li {
+				font-size: 14px;
+				line-height: 17px;
+			}
 		}
-	}
-	.text {
-		background-color: var(--secondary);
-		color: var(--primary);
-		border-radius: 5px;
-		padding: 30px 20px;
 	}
 }

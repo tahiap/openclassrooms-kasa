@@ -10,8 +10,15 @@ footer {
 	align-items: center;
 	.imgContainer {
 		height: 60px;
+		@include mixin.lg {
+			height: 40px;
+		}
 	}
 	p {
-		font-size: 1.2rem;
+		font-size: 24px;
+		@include mixin.lg {
+			margin-top: 20px;
+			font-size: 14px;
+		}
 	}
 }

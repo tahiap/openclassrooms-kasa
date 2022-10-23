@@ -1,3 +1,5 @@
+@use "../../../assets/styles/mixins" as mixin;
+
 .thumbList {
 	display: flex;
 	flex-direction: row;
@@ -9,6 +11,18 @@
 	border-radius: 25px;
 	margin: 45px auto;
 	padding: 50px 20px;
+	@include mixin.lg {
+		width: 100%;
+		background-color: white;
+		flex-direction: column;
+		margin: 15px auto;
+		padding: 20px 0;
+	}
+	a {
+		@include mixin.lg {
+			width: 100%;
+		}
+	}
 }
 
 .emptyFeed {

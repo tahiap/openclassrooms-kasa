@@ -9,6 +9,7 @@ function Thumb({ lodging }) {
 			<div className={`${styles.thumb}`}>
 				<img src={lodging.cover} alt={lodging.title} />
 				<h2>{lodging.title}</h2>
+				<div className={`${styles.shadow}`}></div>
 			</div>
 		</Link>
 	)

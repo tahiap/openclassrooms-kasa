@@ -1,6 +1,7 @@
 // import
 import styles from "./Lodging.module.scss"
 import Slideshow from "./components/Slideshow"
+import Rating from "./components/Rating"
 import Tag from "../../components/tag/Tag"
 import Collapse from "../../components/collapse/Collapse"
 import { useParams, useOutletContext } from "react-router-dom"
@@ -15,7 +16,7 @@ function Lodging() {
 	return (
 		<div className={`${styles.lodging}`}>
 			<div className={`${styles.lodgingSlideshow}`}>
-				<Slideshow />
+				<Slideshow slides={lodging.pictures} />
 			</div>
 			<div className={`${styles.lodgingTitle}`}>
 				<h1>{lodging.title}</h1>
@@ -33,11 +34,7 @@ function Lodging() {
 				))}
 			</div>
 			<div className={`${styles.lodgingRate}`}>
-				<i className="fa-regular fa-star"></i>
-				<i className="fa-regular fa-star"></i>
-				<i className="fa-regular fa-star"></i>
-				<i className="fa-regular fa-star"></i>
-				<i className="fa-regular fa-star"></i>
+				<Rating rating={lodging.rating} />
 			</div>
 			<div className={`${styles.lodgingCollapses}`}>
 				<Collapse

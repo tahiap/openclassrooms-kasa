@@ -1,16 +1,22 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .banner {
 	border-radius: 25px;
 	height: 100%;
 	width: 85%;
 	margin: auto;
 	overflow: hidden;
-	align-items: center;
+	@include mixin.lg {
+		width: 90%;
+	}
 	img {
 		height: 100%;
 		width: 100%;
 		position: relative;
 		top: 0;
 		z-index: 1;
+		object-fit: cover;
+		object-position: bottom;
 		filter: opacity(70%);
 		filter: brightness(70%);
 	}
@@ -23,5 +29,12 @@
 		top: -140px;
 		z-index: 2;
 		width: 100%;
+		@include mixin.xl {
+			font-size: 36px;
+		}
+		@include mixin.lg {
+			font-size: 24px;
+			top: -130px;
+		}
 	}
 }

@@ -1,15 +1,18 @@
+@use "../../../assets/styles/mixins" as mixin;
+
 .thumb {
 	margin: 20px;
 	height: 340px;
 	width: 340px;
 	border-radius: 10px;
 	overflow: hidden;
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 0) 0%,
-		rgba(0, 0, 0, 0.5) 100%
-	);
 	position: relative;
+	@include mixin.lg {
+		margin: 20px auto;
+		width: 90%;
+		height: 250px;
+		align-self: center;
+	}
 	img {
 		position: relative;
 		z-index: 1;
@@ -18,13 +21,30 @@
 		object-fit: cover;
 	}
 	h2 {
+		height: 50px;
 		color: white;
 		font-size: 18px;
 		font-weight: 500;
 		position: relative;
 		top: -60px;
 		left: 15px;
-		z-index: 2;
+		z-index: 3;
 		width: 100%;
+	}
+	.shadow {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		top: -395px;
+		left: 0;
+		z-index: 2;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(0, 0, 0, 0.5) 100%
+		);
+		@include mixin.lg {
+			top: -305px;
+		}
 	}
 }
