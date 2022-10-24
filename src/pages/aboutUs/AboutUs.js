@@ -2,7 +2,7 @@
 import styles from "./AboutUs.module.scss"
 import Banner from "../../components/banner/Banner"
 import Collapse from "../../components/collapse/Collapse"
-import { infosAboutUs } from "../../data/data"
+import infosAboutUs from "../../data/infosAboutUs"
 import { useState, useEffect } from "react"
 import bannerAboutUs from "../../assets/images/banner-aboutus.png"
 

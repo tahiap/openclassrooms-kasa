@@ -30,7 +30,7 @@ function Collapse({ title, text, size }) {
 			{showText && (
 				<div className={`${styles.text}`}>
 					{title === "Équipements" ? (
-						text.map((t) => <li>{t}</li>)
+						text.map((t) => <li key={t}>{t}</li>)
 					) : (
 						<p>{text}</p>
 					)}

@@ -1,3 +1,22 @@
+# Guide de déploiement
+
+Ce dossier contient le frontend de l'application, réalisé dans le cadre du projet 7 Kasa de la formation de développeur web dispensée par Openclassrooms.
+
+Le frontend a été générée avec Create React App.
+
+Afin de rendre le frontend opérationnel, plusieurs actions sont nécessaires.
+
+Cloner le repository :
+$ git clone https://github.com/tahiap/openclassrooms-p7-kasa.git
+
+Installer les dépendances :
+$ npm install
+
+Lancer l'application :
+$ npm start
+
+Ouvrir http://localhost:3000
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
