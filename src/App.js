@@ -1,9 +1,11 @@
+// import
 import styles from "./App.module.scss"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { Outlet } from "react-router-dom"
 import infosLodging from "./data/infosLodging"
 
+// composant racine App
 function App() {
 	return (
 		<div className={`${styles.appContainer}`}>

@@ -2,7 +2,7 @@
 import styles from "./Lodging.module.scss"
 import Slideshow from "./components/Slideshow"
 import Rating from "./components/Rating"
-import Tag from "../../components/tag/Tag"
+import Tag from "./components/Tag"
 import Collapse from "../../components/collapse/Collapse"
 import { useParams, useOutletContext } from "react-router-dom"
 
