@@ -1,23 +1,27 @@
-# Guide de déploiement
+# Informations générales
 
 Ce dossier contient le frontend de l'application, réalisé dans le cadre du projet 7 Kasa de la formation de développeur web dispensée par Openclassrooms.
 
 Le frontend a été générée avec Create React App.
 
+Ce projet a pour objectif la création de la partie frontend d'une application de location immobilière avec `React`. Ce projet permet une initiation aux notions de base de React notamment par l'intégration de maquettes responsives. La logique des composants (props, state, rendu conditionnel) et des routes avec React Router sont abordées et travaillées au cours de ce projet.
+
+# Guide de déploiement
+
 Afin de rendre le frontend opérationnel, plusieurs actions sont nécessaires.
 
-Cloner le repository :
-$ git clone https://github.com/tahiap/openclassrooms-p7-kasa.git
+- Cloner le repository :
+  $ git clone https://github.com/tahiap/openclassrooms-p7-kasa.git
 
-Installer les dépendances :
-$ npm install
+- Installer les dépendances :  
+  $ npm install
 
-Lancer l'application :
-$ npm start
+- Lancer l'application :
+  $ npm start
 
-Ouvrir http://localhost:3000
+- Se rendre sur l'URL http://localhost:3000
 
-# Informations about Create React App
+# Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
