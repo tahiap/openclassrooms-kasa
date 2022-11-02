@@ -11,7 +11,7 @@ Ce projet a pour objectif la création de la partie frontend d'une application d
 Afin de rendre le frontend opérationnel, plusieurs actions sont nécessaires.
 
 - Cloner le repository :  
-  $ git clone https://github.com/tahiap/openclassrooms-p7-kasa.git
+  $ git clone https://github.com/tahiap/openclassrooms-kasa.git
 
 - Installer les dépendances :  
   $ npm install
