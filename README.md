@@ -10,16 +10,16 @@ Ce projet a pour objectif la création de la partie frontend d'une application d
 
 Afin de rendre le frontend opérationnel, plusieurs actions sont nécessaires.
 
-- Cloner le repository :
+- Cloner le repository :  
   $ git clone https://github.com/tahiap/openclassrooms-p7-kasa.git
 
 - Installer les dépendances :  
   $ npm install
 
-- Lancer l'application :
+- Lancer l'application :  
   $ npm start
 
-- Se rendre sur l'URL http://localhost:3000
+- Se rendre sur l'URL : http://localhost:3000
 
 # Create React App
 
