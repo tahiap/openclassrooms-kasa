@@ -8,20 +8,20 @@ import AboutUs from "../pages/aboutUs/AboutUs"
 
 export const router = createBrowserRouter([
 	{
-		path: "openclassrooms-kasa/",
+		path: "/openclassrooms-kasa",
 		element: <App />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: "openclassrooms-kasa/",
+				path: "/",
 				element: <Home />,
 			},
 			{
-				path: "openclassrooms-kasa/logement/:id",
+				path: "/logement/:id",
 				element: <Lodging />,
 			},
 			{
-				path: "openclassrooms-kasa/a-propos",
+				path: "/a-propos",
 				element: <AboutUs />,
 			},
 		],
