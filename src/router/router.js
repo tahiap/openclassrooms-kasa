@@ -1,14 +1,14 @@
 // import
-import { createBrowserRouter } from "react-router-dom"
+import { createHashRouter } from "react-router-dom"
 import App from "../App"
 import ErrorPage from "../pages/errorPage/ErrorPage"
 import Home from "../pages/home/Home"
 import Lodging from "../pages/lodging/Lodging"
 import AboutUs from "../pages/aboutUs/AboutUs"
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
 	{
-		path: "/openclassrooms-kasa",
+		path: "/",
 		element: <App />,
 		errorElement: <ErrorPage />,
 		children: [
